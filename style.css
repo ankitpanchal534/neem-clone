@@ -17,6 +17,7 @@ header {
   align-content: center;
   padding: 5px;
   z-index: 100;
+  box-shadow: 0px 2px 5px black;
 }
 
 ::-webkit-scrollbar-track {
@@ -208,13 +209,38 @@ footer {
 .header-list-hidden {
   display: none;
 }
+
+.sec-2-image {
+  transition: 2s all;
+}
+
 @media screen and (max-width: 798px) {
   .header-ul li {
     display: none;
+    flex-direction: column;
+  }
+  .list-for-mobile {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: #3c145f;
+    top: 50px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .list-for-mobile li {
+    /* margin: -2px; */
+    background-color: #3c145f;
+    padding: 20px;
+    text-align: center;
+    border: 1px inset black;
   }
   header {
     padding: 0;
-    width: 97%;
+    width: 98%;
+    z-index: 100;
+    border-bottom: 2px solid black;
   }
   .text-box {
     padding-top: 50px;
